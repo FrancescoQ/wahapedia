@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_wh_dmg_w
+    - paragraphs.paragraphs_type.wahapedia_datasheet_damage_row
+id: paragraph.wahapedia_datasheet_damage_row.field_wh_dmg_w
+field_name: field_wh_dmg_w
+entity_type: paragraph
+bundle: wahapedia_datasheet_damage_row
+label: 'Remaining Wounds'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

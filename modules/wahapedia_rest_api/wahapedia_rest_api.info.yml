@@ -1,0 +1,9 @@
+name: Wahapedia REST API services
+type: module
+description: Expose Wahapedia Data retrieved from the CSVs.
+package: wahapedia
+core_version_requirement: ^8.7.7 || ^9
+
+dependencies:
+  - drupal:wahapedia
+  - drupal:rest

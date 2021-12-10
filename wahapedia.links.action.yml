@@ -1,0 +1,71 @@
+# All action links for this module
+
+wahapedia.faction_add:
+  route_name: entity.wahapedia_faction.add_form
+  title: 'Add faction'
+  appears_on:
+    - entity.wahapedia_faction.collection
+    - entity.wahapedia_faction.canonical
+
+wahapedia.wahapedia_source_add:
+  route_name: entity.wahapedia_source.add_form
+  title: 'Add source'
+  appears_on:
+    - entity.wahapedia_source.collection
+    - entity.wahapedia_source.canonical
+
+wahapedia.wahapedia_stratagem_add:
+  route_name: entity.wahapedia_stratagem.add_form
+  title: 'Add stratagem'
+  appears_on:
+    - entity.wahapedia_stratagem.collection
+    - entity.wahapedia_stratagem.canonical
+
+wahapedia.wahapedia_ability_add:
+  route_name: entity.wahapedia_ability.add_form
+  title: 'Add ability'
+  appears_on:
+    - entity.wahapedia_ability.collection
+    - entity.wahapedia_ability.canonical
+
+wahapedia.wahapedia_keyword_add:
+  route_name: entity.wahapedia_keyword.add_form
+  title: 'Add keyword'
+  appears_on:
+    - entity.wahapedia_keyword.collection
+    - entity.wahapedia_keyword.canonical
+
+wahapedia.wahapedia_datasheet_add:
+  route_name: entity.wahapedia_datasheet.add_form
+  title: 'Add datasheet'
+  appears_on:
+    - entity.wahapedia_datasheet.collection
+    - entity.wahapedia_datasheet.canonical
+
+wahapedia.wahapedia_wargear_add:
+  route_name: entity.wahapedia_wargear.add_form
+  title: 'Add wargear'
+  appears_on:
+    - entity.wahapedia_wargear.collection
+    - entity.wahapedia_wargear.canonical
+
+wahapedia.wahapedia_warlord_trait_add:
+  route_name: entity.wahapedia_warlord_trait.add_form
+  title: 'Add warlord trait'
+  appears_on:
+    - entity.wahapedia_warlord_trait.collection
+    - entity.wahapedia_warlord_trait.canonical
+
+wahapedia.wahapedia_psychic_power_add:
+  route_name: entity.wahapedia_psychic_power.add_form
+  title: 'Add psychic power'
+  appears_on:
+    - entity.wahapedia_psychic_power.collection
+    - entity.wahapedia_psychic_power.canonical
+
+wahapedia.wahapedia_model_add:
+  route_name: entity.wahapedia_model.add_form
+  title: 'Add model'
+  appears_on:
+    - entity.wahapedia_model.collection
+    - entity.wahapedia_model.canonical

@@ -1,0 +1,153 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.wahapedia_model.wahapedia_model.field_wh_model_dmg_table
+  module:
+    - entity_reference_revisions
+    - wahapedia
+id: wahapedia_model.wahapedia_model.default
+targetEntityType: wahapedia_model
+bundle: wahapedia_model
+mode: default
+content:
+  A:
+    label: above
+    type: string
+    region: content
+    weight: 9
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  BS:
+    label: above
+    type: string
+    region: content
+    weight: 5
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  Ld:
+    label: above
+    type: string
+    region: content
+    weight: 10
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  M:
+    label: above
+    type: string
+    region: content
+    weight: 3
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  S:
+    label: above
+    type: string
+    region: content
+    weight: 6
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  Sv:
+    label: above
+    type: string
+    region: content
+    weight: 11
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  T:
+    label: above
+    type: string
+    region: content
+    weight: 7
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  W:
+    label: above
+    type: string
+    region: content
+    weight: 8
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  WS:
+    label: above
+    type: string
+    region: content
+    weight: 4
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  avoid_update:
+    label: visible
+    type: boolean
+    region: content
+    weight: 1
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+  cost:
+    label: above
+    type: string
+    region: content
+    weight: 12
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  cost_description:
+    label: above
+    type: string
+    region: content
+    weight: 13
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  cost_including_wargear:
+    label: above
+    type: string
+    region: content
+    weight: 15
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_wh_model_dmg_table:
+    type: entity_reference_revisions_entity_view
+    weight: 16
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  models_per_unit:
+    label: above
+    type: string
+    region: content
+    weight: 14
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  name:
+    label: hidden
+    type: string
+    region: content
+    weight: 0
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  wid:
+    label: above
+    type: string
+    region: content
+    weight: 2
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden: {  }

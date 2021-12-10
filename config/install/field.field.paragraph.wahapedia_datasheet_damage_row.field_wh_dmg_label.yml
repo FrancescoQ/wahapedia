@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_wh_dmg_label
+    - paragraphs.paragraphs_type.wahapedia_datasheet_damage_row
+id: paragraph.wahapedia_datasheet_damage_row.field_wh_dmg_label
+field_name: field_wh_dmg_label
+entity_type: paragraph
+bundle: wahapedia_datasheet_damage_row
+label: Label
+description: 'If it matches one of the model''s field (i.e. "M", "WS" ... ) it will be shown to be as a degradation of that ability, if instead it''s something else, it will occupy it''s own column.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

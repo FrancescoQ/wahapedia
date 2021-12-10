@@ -1,0 +1,118 @@
+# Import form
+wahapedia.import:
+  path: 'admin/content/wahapedia/import'
+  defaults:
+    _form: '\Drupal\wahapedia\Form\WahapediaImportForm'
+    _title: 'Import Wahapedia Data'
+  requirements:
+    _permission: 'import'
+  options:
+    _admin_route: TRUE  '
+
+# Entity lists home
+wahapedia.contents:
+  path: '/admin/content/wahapedia'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'Wahapedia Contents'
+  requirements:
+    _permission: 'access administration pages'
+
+# Entity configuration home
+wahapedia.entities:
+  path: '/admin/structure/wahapedia'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'Wahapedia Entities'
+  requirements:
+    _permission: 'access administration pages'
+
+# Faction
+wahapedia.faction_settings:
+  path: '/admin/structure/wahapedia/faction'
+  defaults:
+    _form: '\Drupal\wahapedia\Form\WahapediaEntitySettingsForm'
+    _title: 'Faction settings'
+  requirements:
+    _permission: 'administer faction entity'
+
+# Source
+wahapedia.source_settings:
+  path: '/admin/structure/wahapedia/wahapedia_source'
+  defaults:
+    _form: '\Drupal\wahapedia\Form\WahapediaEntitySettingsForm'
+    _title: 'Source settings'
+  requirements:
+    _permission: 'administer source entity'
+
+# Stratagem
+wahapedia.stratagem_settings:
+  path: '/admin/structure/wahapedia/wahapedia_stratagem'
+  defaults:
+    _form: '\Drupal\wahapedia\Form\WahapediaEntitySettingsForm'
+    _title: 'Stratagem settings'
+  requirements:
+    _permission: 'administer stratagem entity'
+
+# Ability
+wahapedia.ability_settings:
+  path: '/admin/structure/wahapedia/wahapedia_ability'
+  defaults:
+    _form: '\Drupal\wahapedia\Form\WahapediaEntitySettingsForm'
+    _title: 'Ability settings'
+  requirements:
+    _permission: 'administer ability entity'
+
+# Keyword
+wahapedia.keyword_settings:
+  path: '/admin/structure/wahapedia/wahapedia_keyword'
+  defaults:
+    _form: '\Drupal\wahapedia\Form\WahapediaEntitySettingsForm'
+    _title: 'Keyword settings'
+  requirements:
+    _permission: 'administer keyword entity'
+
+# Datasheet
+wahapedia.datasheet_settings:
+  path: '/admin/structure/wahapedia/wahapedia_datasheet'
+  defaults:
+    _form: '\Drupal\wahapedia\Form\WahapediaEntitySettingsForm'
+    _title: 'Datasheet settings'
+  requirements:
+    _permission: 'administer datasheet entity'
+
+# Wargear
+wahapedia.wargear_settings:
+  path: '/admin/structure/wahapedia/wahapedia_wargear'
+  defaults:
+    _form: '\Drupal\wahapedia\Form\WahapediaEntitySettingsForm'
+    _title: 'Wargear settings'
+  requirements:
+    _permission: 'administer wargear entity'
+
+# Warlord Traits
+wahapedia.warlord_trait_settings:
+  path: '/admin/structure/wahapedia/wahapedia_warlord_trait'
+  defaults:
+    _form: '\Drupal\wahapedia\Form\WahapediaEntitySettingsForm'
+    _title: 'Warlord Trait settings'
+  requirements:
+    _permission: 'administer warlord_trait entity'
+
+# Psychic powers
+wahapedia.psychic_power_settings:
+  path: '/admin/structure/wahapedia/wahapedia_psychic_power'
+  defaults:
+    _form: '\Drupal\wahapedia\Form\WahapediaEntitySettingsForm'
+    _title: 'Psychic Power settings'
+  requirements:
+    _permission: 'administer psychic_power entity'
+
+# Model
+wahapedia.model_settings:
+  path: '/admin/structure/wahapedia/wahapedia_model'
+  defaults:
+    _form: '\Drupal\wahapedia\Form\WahapediaEntitySettingsForm'
+    _title: 'Model settings'
+  requirements:
+    _permission: 'administer model entity'

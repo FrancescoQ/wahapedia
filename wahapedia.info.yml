@@ -1,0 +1,27 @@
+name: Wahapedia integration
+type: module
+description: Retrieve Wahapedia data from remote CSVs.
+package: wahapedia
+core_version_requirement: ^8.7.7 || ^9
+
+dependencies:
+  - drupal:paragraphs
+
+# Paragraphs.
+config_devel:
+  # Model
+  - core.entity_view_display.wahapedia_model.wahapedia_model.default
+  - core.entity_form_display.wahapedia_model.wahapedia_model.default
+  - field.storage.wahapedia_model.field_wh_model_dmg_table
+  - field.field.wahapedia_model.wahapedia_model.field_wh_model_dmg_table
+  -
+  # Model damage row paragraph
+  - field.storage.paragraph.field_wh_dmg_w
+  - field.storage.paragraph.field_wh_dmg_value
+  - field.storage.paragraph.field_wh_dmg_label
+  - paragraphs.paragraphs_type.wahapedia_datasheet_damage_row
+  - field.field.paragraph.wahapedia_datasheet_damage_row.field_wh_dmg_w
+  - field.field.paragraph.wahapedia_datasheet_damage_row.field_wh_dmg_value
+  - field.field.paragraph.wahapedia_datasheet_damage_row.field_wh_dmg_label
+  - core.entity_view_display.paragraph.wahapedia_datasheet_damage_row.default
+  - core.entity_form_display.paragraph.wahapedia_datasheet_damage_row.default

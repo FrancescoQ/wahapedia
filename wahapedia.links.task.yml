@@ -1,0 +1,239 @@
+#
+# Faction entity local tasks.
+#
+faction.settings_tab:
+  route_name: wahapedia.faction_settings
+  title: Settings
+  base_route: wahapedia.faction_settings
+
+faction.view:
+  route_name: entity.wahapedia_faction.canonical
+  base_route: entity.wahapedia_faction.canonical
+  title: View
+
+faction.page_edit:
+  route_name: entity.wahapedia_faction.edit_form
+  base_route: entity.wahapedia_faction.canonical
+  title: Edit
+
+faction.delete_confirm:
+  route_name:  entity.wahapedia_faction.delete_form
+  base_route:  entity.wahapedia_faction.canonical
+  title: Delete
+  weight: 10
+
+#
+# Source local tasks
+#
+source.settings_tab:
+  route_name: wahapedia.source_settings
+  title: Settings
+  base_route: wahapedia.source_settings
+
+source.view:
+  route_name: entity.wahapedia_source.canonical
+  base_route: entity.wahapedia_source.canonical
+  title: View
+
+source.page_edit:
+  route_name: entity.wahapedia_source.edit_form
+  base_route: entity.wahapedia_source.canonical
+  title: Edit
+
+source.delete_confirm:
+  route_name:  entity.wahapedia_source.delete_form
+  base_route:  entity.wahapedia_source.canonical
+  title: Delete
+  weight: 10
+
+#
+# Stratagem local tasks
+#
+stratagem.settings_tab:
+  route_name: wahapedia.stratagem_settings
+  title: Settings
+  base_route: wahapedia.stratagem_settings
+
+stratagem.view:
+  route_name: entity.wahapedia_stratagem.canonical
+  base_route: entity.wahapedia_stratagem.canonical
+  title: View
+
+stratagem.page_edit:
+  route_name: entity.wahapedia_stratagem.edit_form
+  base_route: entity.wahapedia_stratagem.canonical
+  title: Edit
+
+stratagem.delete_confirm:
+  route_name:  entity.wahapedia_stratagem.delete_form
+  base_route:  entity.wahapedia_stratagem.canonical
+  title: Delete
+  weight: 10
+
+#
+# Abilities local tasks
+#
+ability.settings_tab:
+  route_name: wahapedia.ability_settings
+  title: Settings
+  base_route: wahapedia.ability_settings
+
+ability.view:
+  route_name: entity.wahapedia_ability.canonical
+  base_route: entity.wahapedia_ability.canonical
+  title: View
+
+ability.page_edit:
+  route_name: entity.wahapedia_ability.edit_form
+  base_route: entity.wahapedia_ability.canonical
+  title: Edit
+
+ability.delete_confirm:
+  route_name:  entity.wahapedia_ability.delete_form
+  base_route:  entity.wahapedia_ability.canonical
+  title: Delete
+  weight: 10
+
+#
+# Keywords local tasks
+#
+keyword.settings_tab:
+  route_name: wahapedia.keyword_settings
+  title: Settings
+  base_route: wahapedia.keyword_settings
+
+keyword.view:
+  route_name: entity.wahapedia_keyword.canonical
+  base_route: entity.wahapedia_keyword.canonical
+  title: View
+
+keyword.page_edit:
+  route_name: entity.wahapedia_keyword.edit_form
+  base_route: entity.wahapedia_keyword.canonical
+  title: Edit
+
+keyword.delete_confirm:
+  route_name:  entity.wahapedia_keyword.delete_form
+  base_route:  entity.wahapedia_keyword.canonical
+  title: Delete
+  weight: 10
+
+#
+# Datasheet local tasks
+#
+datasheet.settings_tab:
+  route_name: wahapedia.datasheet_settings
+  title: Settings
+  base_route: wahapedia.datasheet_settings
+
+datasheet.view:
+  route_name: entity.wahapedia_datasheet.canonical
+  base_route: entity.wahapedia_datasheet.canonical
+  title: View
+
+datasheet.page_edit:
+  route_name: entity.wahapedia_datasheet.edit_form
+  base_route: entity.wahapedia_datasheet.canonical
+  title: Edit
+
+datasheet.delete_confirm:
+  route_name:  entity.wahapedia_datasheet.delete_form
+  base_route:  entity.wahapedia_datasheet.canonical
+  title: Delete
+  weight: 10
+
+#
+# wargear local tasks
+#
+wargear.settings_tab:
+  route_name: wahapedia.wargear_settings
+  title: Settings
+  base_route: wahapedia.wargear_settings
+
+wargear.view:
+  route_name: entity.wahapedia_wargear.canonical
+  base_route: entity.wahapedia_wargear.canonical
+  title: View
+
+wargear.page_edit:
+  route_name: entity.wahapedia_wargear.edit_form
+  base_route: entity.wahapedia_wargear.canonical
+  title: Edit
+
+wargear.delete_confirm:
+  route_name:  entity.wahapedia_wargear.delete_form
+  base_route:  entity.wahapedia_wargear.canonical
+  title: Delete
+  weight: 10
+
+#
+# warlord_trait local tasks
+#
+warlord_trait.settings_tab:
+  route_name: wahapedia.warlord_trait_settings
+  title: Settings
+  base_route: wahapedia.warlord_trait_settings
+
+warlord_trait.view:
+  route_name: entity.wahapedia_warlord_trait.canonical
+  base_route: entity.wahapedia_warlord_trait.canonical
+  title: View
+
+warlord_trait.page_edit:
+  route_name: entity.wahapedia_warlord_trait.edit_form
+  base_route: entity.wahapedia_warlord_trait.canonical
+  title: Edit
+
+warlord_trait.delete_confirm:
+  route_name:  entity.wahapedia_warlord_trait.delete_form
+  base_route:  entity.wahapedia_warlord_trait.canonical
+  title: Delete
+  weight: 10
+
+#
+# psychic_power local tasks
+#
+psychic_power.settings_tab:
+  route_name: wahapedia.psychic_power_settings
+  title: Settings
+  base_route: wahapedia.psychic_power_settings
+
+psychic_power.view:
+  route_name: entity.wahapedia_psychic_power.canonical
+  base_route: entity.wahapedia_psychic_power.canonical
+  title: View
+
+psychic_power.page_edit:
+  route_name: entity.wahapedia_psychic_power.edit_form
+  base_route: entity.wahapedia_psychic_power.canonical
+  title: Edit
+
+psychic_power.delete_confirm:
+  route_name:  entity.wahapedia_psychic_power.delete_form
+  base_route:  entity.wahapedia_psychic_power.canonical
+  title: Delete
+  weight: 10
+
+#
+# Model local tasks
+#
+model.settings_tab:
+  route_name: wahapedia.model_settings
+  title: Settings
+  base_route: wahapedia.model_settings
+
+model.view:
+  route_name: entity.wahapedia_model.canonical
+  base_route: entity.wahapedia_model.canonical
+  title: View
+
+model.page_edit:
+  route_name: entity.wahapedia_model.edit_form
+  base_route: entity.wahapedia_model.canonical
+  title: Edit
+
+model.delete_confirm:
+  route_name:  entity.wahapedia_model.delete_form
+  base_route:  entity.wahapedia_model.canonical
+  title: Delete
+  weight: 10

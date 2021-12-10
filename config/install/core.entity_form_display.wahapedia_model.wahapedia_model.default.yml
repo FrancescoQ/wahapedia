@@ -1,0 +1,153 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.wahapedia_model.wahapedia_model.field_wh_model_dmg_table
+  module:
+    - paragraphs
+    - wahapedia
+id: wahapedia_model.wahapedia_model.default
+targetEntityType: wahapedia_model
+bundle: wahapedia_model
+mode: default
+content:
+  A:
+    type: string_textfield
+    region: content
+    weight: 9
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  BS:
+    type: string_textfield
+    region: content
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  Ld:
+    type: string_textfield
+    region: content
+    weight: 10
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  M:
+    type: string_textfield
+    region: content
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  S:
+    type: string_textfield
+    region: content
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  Sv:
+    type: string_textfield
+    region: content
+    weight: 11
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  T:
+    type: string_textfield
+    region: content
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  W:
+    type: string_textfield
+    region: content
+    weight: 8
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  WS:
+    type: string_textfield
+    region: content
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  avoid_update:
+    type: boolean_checkbox
+    region: content
+    weight: 1
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  cost:
+    type: string_textfield
+    region: content
+    weight: 12
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  cost_description:
+    type: string_textfield
+    region: content
+    weight: 13
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  cost_including_wargear:
+    type: string_textfield
+    region: content
+    weight: 15
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_wh_model_dmg_table:
+    type: entity_reference_paragraphs
+    weight: 16
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings: {  }
+    region: content
+  models_per_unit:
+    type: string_textfield
+    region: content
+    weight: 14
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    region: content
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  wid:
+    type: string_textfield
+    region: content
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,8 @@
+name: Wahapedia Telegram
+type: module
+description: Telegram BOT functionality to fetch Wahapedia Data.
+package: wahapedia
+core_version_requirement: ^8.7.7 || ^9
+
+dependencies:
+  - drupal:wahapedia

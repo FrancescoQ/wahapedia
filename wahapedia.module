@@ -1,0 +1,68 @@
+<?php
+
+/**
+ * @file
+ * Contains Drupal\wahapedia\wahapedia.module.
+ */
+
+define('WAHAPEDIA_CSV_SEPARATOR', '|');
+
+function wahapedia_get_wahapedia_entity_types($count = FALSE) {
+  $entity_type_manager = \Drupal::entityTypeManager();
+  $definitions = $entity_type_manager->getDefinitions();
+  $entity_types = [];
+  /**
+   * @var \Drupal\Core\Config\Entity\ConfigEntityTypeInterface $definition
+   */
+  foreach ($definitions as $entity_type => $definition) {
+    $class = $definition->getClass();
+    if (is_subclass_of($class, "Drupal\wahapedia\WahapediaEntityInterface")) {
+      $entity_types[$entity_type] = [
+        'label' => $definition->getLabel(),
+      ];
+
+      if ($count) {
+        $entities = $entity_type_manager->getStorage($entity_type)->loadMultiple();
+        $entity_types[$entity_type]['count'] = count($entities);
+      }
+    }
+  }
+
+  return $entity_types;
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function wahapedia_preprocess_page(&$variables) {
+  /** @var \Drupal\wahapedia\WahapediaCSVProcessor $csv_processor */
+//  $csv_processor = \Drupal::service('wahapedia.csv_processor');
+
+//  $entity_data = [
+//   'faction_id' => "AC",
+//   'name' => "INDOMITABLE GUARDIANS",
+//   'type' => "Adeptus Custodes Stratagem",
+//   'cp_cost' => "1",
+//   'legend' => "Once they have their objective, the warriors of the Adeptus Custodes will not be moved.",
+//   'source_id' => "",
+//   'description' => "lorem"
+//  ];
+//
+//  /** @var \Drupal\wahapedia\Entity\Faction $s */
+//  $s = \Drupal::entityTypeManager()->getStorage('wahapedia_stratagem')->load(1);
+////  $s->set('faction_id', 2);
+////  $s->save();
+//  $r="";
+
+//  $csv_processor->createWahapediaStratagemEntities([$entity_data], [], TRUE);
+
+//  $factions = $f->loadMultiple();
+//
+//  /** @var \Drupal\wahapedia\Entity\Faction $faction */
+//  $faction = reset($factions);
+//  if ($faction) {
+//    $wid = $faction->wid();
+//    $fields = $faction->getImportedFields();
+//  }
+//  $r="";
+}

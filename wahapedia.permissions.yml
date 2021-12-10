@@ -1,0 +1,126 @@
+'import from wahapedia':
+  title: Import from Wahapedia.
+'administer wahapedia':
+  title: Administer all Wahapedia entities.
+'view wahapedia content':
+  title: View Wahapedia content.
+
+# Faction
+'delete wahapedia_faction entity':
+  title: Delete Wahapedia faction content.
+'add wahapedia_faction entity':
+  title: Add Wahapedia faction content
+'view wahapedia_faction entity':
+  title: View Wahapedia faction content
+'edit wahapedia_faction entity':
+  title: Edit Wahapedia faction content
+'administer wahapedia_faction entity':
+  title: Administer Wahapedia faction settings
+
+# Source
+'delete wahapedia_source entity':
+  title: Delete Wahapedia source content.
+'add wahapedia_source entity':
+  title: Add Wahapedia source content
+'view wahapedia_source entity':
+  title: View Wahapedia source content
+'edit wahapedia_source entity':
+  title: Edit Wahapedia source content
+'administer wahapedia_source entity':
+  title: Administer Wahapedia source settings
+
+# Stratagem
+'delete wahapedia_stratagem entity':
+  title: Delete Wahapedia stratagem content.
+'add wahapedia_stratagem entity':
+  title: Add Wahapedia stratagem content
+'view wahapedia_stratagem entity':
+  title: View Wahapedia stratagem content
+'edit wahapedia_stratagem entity':
+  title: Edit Wahapedia stratagem content
+'administer wahapedia_stratagem entity':
+  title: Administer Wahapedia stratagem settings
+
+# Ability
+'delete wahapedia_ability entity':
+  title: Delete Wahapedia ability content.
+'add wahapedia_ability entity':
+  title: Add Wahapedia ability content
+'view wahapedia_ability entity':
+  title: View Wahapedia ability content
+'edit wahapedia_ability entity':
+  title: Edit Wahapedia ability content
+'administer wahapedia_ability entity':
+  title: Administer Wahapedia ability settings
+
+# Keyword
+'delete wahapedia_keyword entity':
+  title: Delete Wahapedia keyword content.
+'add wahapedia_keyword entity':
+  title: Add Wahapedia keyword content
+'view wahapedia_keyword entity':
+  title: View Wahapedia keyword content
+'edit wahapedia_keyword entity':
+  title: Edit Wahapedia keyword content
+'administer wahapedia_keyword entity':
+  title: Administer Wahapedia keyword settings
+
+# Datasheet
+'delete wahapedia_datasheet entity':
+  title: Delete Wahapedia datasheet content.
+'add wahapedia_datasheet entity':
+  title: Add Wahapedia datasheet content
+'view wahapedia_datasheet entity':
+  title: View Wahapedia datasheet content
+'edit wahapedia_datasheet entity':
+  title: Edit Wahapedia datasheet content
+'administer wahapedia_datasheet entity':
+  title: Administer Wahapedia datasheet settings
+
+# Wargear
+'delete wahapedia_wargear entity':
+  title: Delete Wahapedia wargear content.
+'add wahapedia_wargear entity':
+  title: Add Wahapedia wargear content
+'view wahapedia_wargear entity':
+  title: View Wahapedia wargear content
+'edit wahapedia_wargear entity':
+  title: Edit Wahapedia wargear content
+'administer wahapedia_wargear entity':
+  title: Administer Wahapedia wargear settings
+
+# Warlord trait
+'delete wahapedia_warlord_trait entity':
+  title: Delete Wahapedia warlord trait content.
+'add wahapedia_warlord_trait entity':
+  title: Add Wahapedia warlord trait content
+'view wahapedia_warlord_trait entity':
+  title: View Wahapedia warlord trait content
+'edit wahapedia_warlord_trait entity':
+  title: Edit Wahapedia warlord_trait content
+'administer wahapedia_warlord_trait entity':
+  title: Administer Wahapedia warlord trait settings
+
+# Psychic Power
+'delete wahapedia_psychic_power entity':
+  title: Delete Wahapedia psychic power content.
+'add wahapedia_psychic_power entity':
+  title: Add Wahapedia psychic power content
+'view wahapedia_psychic_power entity':
+  title: View Wahapedia psychic power content
+'edit wahapedia_psychic_power entity':
+  title: Edit Wahapedia psychic power content
+'administer wahapedia_psychic_power entity':
+  title: Administer Wahapedia psychic power settings
+
+# Model
+'delete wahapedia_model entity':
+  title: Delete Wahapedia model content.
+'add wahapedia_model entity':
+  title: Add Wahapedia model content
+'view wahapedia_model entity':
+  title: View Wahapedia model content
+'edit wahapedia_model entity':
+  title: Edit Wahapedia model content
+'administer wahapedia_model entity':
+  title: Administer Wahapedia model settings

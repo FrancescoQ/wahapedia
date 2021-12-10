@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.wahapedia_model.field_wh_model_dmg_table
+    - paragraphs.paragraphs_type.wahapedia_datasheet_damage_row
+  module:
+    - entity_reference_revisions
+    - wahapedia
+id: wahapedia_model.wahapedia_model.field_wh_model_dmg_table
+field_name: field_wh_model_dmg_table
+entity_type: wahapedia_model
+bundle: wahapedia_model
+label: 'Damage table'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      wahapedia_datasheet_damage_row: wahapedia_datasheet_damage_row
+    target_bundles_drag_drop:
+      wahapedia_datasheet_damage_row:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

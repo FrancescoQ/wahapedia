@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_wh_dmg_value
+    - paragraphs.paragraphs_type.wahapedia_datasheet_damage_row
+id: paragraph.wahapedia_datasheet_damage_row.field_wh_dmg_value
+field_name: field_wh_dmg_value
+entity_type: paragraph
+bundle: wahapedia_datasheet_damage_row
+label: Value
+description: 'THe modified value.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

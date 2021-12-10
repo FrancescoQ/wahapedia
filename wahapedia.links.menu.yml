@@ -1,0 +1,171 @@
+#
+# Admin menu "containers"
+#
+wahapedia.contents:
+  title: 'Wahapedia'
+  description: 'Wahapedia contents'
+  route_name:  wahapedia.contents
+  parent: system.admin_content
+
+wahapedia.entities:
+  title: 'Wahapedia'
+  description: 'Wahapedia entities'
+  route_name:  wahapedia.entities
+  parent: system.admin_structure
+
+wahapedia.import:
+  title: 'Import'
+  description: 'Import wahapedia data'
+  route_name:  wahapedia.import
+  parent: wahapedia.contents
+  weight: -99
+
+#
+# Faction settings and list.
+#
+wahapedia.faction_settings:
+  title: 'Faction'
+  description: 'Configure faction entity'
+  route_name:  wahapedia.faction_settings
+  parent: wahapedia.entities
+
+wahapedia.faction_list:
+  title: 'Faction'
+  description: 'Faction entities list'
+  route_name:  entity.wahapedia_faction.collection
+  parent: wahapedia.contents
+
+#
+# Source settings and list.
+#
+wahapedia.source_settings:
+  title: 'Source'
+  description: 'Configure source entity'
+  route_name:  wahapedia.source_settings
+  parent: wahapedia.entities
+
+wahapedia.source_list:
+  title: 'Source'
+  description: 'Faction entities list'
+  route_name:  entity.wahapedia_source.collection
+  parent: wahapedia.contents
+
+#
+# Stratagem settings and list.
+#
+wahapedia.stratagem_settings:
+  title: 'Stratagem'
+  description: 'Configure stratagem entity'
+  route_name:  wahapedia.stratagem_settings
+  parent: wahapedia.entities
+
+wahapedia.stratagem_list:
+  title: 'Stratagem'
+  description: 'Stratagem entities list'
+  route_name:  entity.wahapedia_stratagem.collection
+  parent: wahapedia.contents
+
+#
+# Ability settings and list.
+#
+wahapedia.ability_settings:
+  title: 'Ability'
+  description: 'Configure ability entity'
+  route_name:  wahapedia.ability_settings
+  parent: wahapedia.entities
+
+wahapedia.ability_list:
+  title: 'Ability'
+  description: 'Abilities entities list'
+  route_name:  entity.wahapedia_ability.collection
+  parent: wahapedia.contents
+
+#
+# Keyword settings and list.
+#
+wahapedia.keyword_settings:
+  title: 'Keyword'
+  description: 'Configure keyword entity'
+  route_name:  wahapedia.keyword_settings
+  parent: wahapedia.entities
+
+wahapedia.keyword_list:
+  title: 'Keyword'
+  description: 'Keywords entities list'
+  route_name:  entity.wahapedia_keyword.collection
+  parent: wahapedia.contents
+
+#
+# Datasheet settings and list.
+#
+wahapedia.datasheet_settings:
+  title: 'Datasheet'
+  description: 'Configure datasheet entity'
+  route_name:  wahapedia.datasheet_settings
+  parent: wahapedia.entities
+
+wahapedia.datasheet_list:
+  title: 'Datasheet'
+  description: 'Datasheets entities list'
+  route_name:  entity.wahapedia_datasheet.collection
+  parent: wahapedia.contents
+
+#
+# Wargear settings and list.
+#
+wahapedia.wargear_settings:
+  title: 'Wargear'
+  description: 'Configure wargear entity'
+  route_name:  wahapedia.wargear_settings
+  parent: wahapedia.entities
+
+wahapedia.wargear_list:
+  title: 'Wargear'
+  description: 'Wargears entities list'
+  route_name:  entity.wahapedia_wargear.collection
+  parent: wahapedia.contents
+
+#
+# Warlord Trait settings and list.
+#
+wahapedia.warlord_trait_settings:
+  title: 'Warlord Trait'
+  description: 'Configure warlord_trait entity'
+  route_name:  wahapedia.warlord_trait_settings
+  parent: wahapedia.entities
+
+wahapedia.warlord_trait_list:
+  title: 'Warlord Trait'
+  description: 'Warlord Traits entities list'
+  route_name:  entity.wahapedia_warlord_trait.collection
+  parent: wahapedia.contents
+
+#
+# Psychic Power settings and list.
+#
+wahapedia.psychic_power_settings:
+  title: 'Psychic Power'
+  description: 'Configure psychic_power entity'
+  route_name:  wahapedia.psychic_power_settings
+  parent: wahapedia.entities
+
+wahapedia.psychic_power_list:
+  title: 'Psychic Power'
+  description: 'Psychic Powers entities list'
+  route_name:  entity.wahapedia_psychic_power.collection
+  parent: wahapedia.contents
+
+#
+# Model settings and list.
+#
+wahapedia.model_settings:
+  title: 'Model'
+  description: 'Configure model entity'
+  route_name:  wahapedia.model_settings
+  parent: wahapedia.entities
+
+wahapedia.model_list:
+  title: 'Model'
+  description: 'Model entities list'
+  route_name:  entity.wahapedia_model.collection
+  parent: wahapedia.contents

@@ -1,0 +1,4 @@
+services:
+  wahapedia.csv_processor:
+    class: Drupal\wahapedia\WahapediaCSVProcessor
+    arguments: ['@logger.factory', '@language_manager', '@messenger', '@file_system', '@entity_type.manager']

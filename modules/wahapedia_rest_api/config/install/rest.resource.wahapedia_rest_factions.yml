@@ -1,0 +1,15 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - serialization
+    - user
+id: wahapedia_rest_factions
+plugin_id: wahapedia_rest_factions
+granularity: resource
+configuration:
+  GET:
+    supported_formats:
+      - json
+    supported_auth:
+      - cookie
