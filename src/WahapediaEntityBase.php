@@ -186,7 +186,8 @@ abstract class WahapediaEntityBase extends ContentEntityBase implements Wahapedi
       $field_type = $additional_field['field_type'];
       $label = $additional_field['label'];
       $description = $additional_field['description'];
-      $options = isset($additional_field['field_options']) ? $additional_field['field_options'] : [];
+      $options = $additional_field['field_options'] ?? [];
+      $cardinality = $options['cardinality'] ?? 1;
 
       switch ($field_type) {
         case 'string':
@@ -197,8 +198,7 @@ abstract class WahapediaEntityBase extends ContentEntityBase implements Wahapedi
           break;
         case 'entity_reference':
           $type = $options['target_type'];
-
-          $fields[$key] = self::generateEntityReferenceField($label, $description, $type);
+          $fields[$key] = self::generateEntityReferenceField($label, $description, $type, $cardinality);
           break;
         case 'boolean':
           $fields[$key] = self::generateBooleanField($label, $description);
@@ -273,27 +273,24 @@ abstract class WahapediaEntityBase extends ContentEntityBase implements Wahapedi
    *
    * @return \Drupal\Core\Field\BaseFieldDefinition
    */
-  protected static function generateEntityReferenceField($field_name, $description, $type, $widget_type = NULL) {
+  protected static function generateEntityReferenceField($field_name, $description, $type, $cardinality = 1, $settings = NULL) {
     // Default widget as autocomplete.
     $widget = [
       'type' => 'entity_reference_autocomplete',
       'settings' => [
         'match_operator' => 'CONTAINS',
         'size' => '60',
-        'autocomplete_type' => 'tags',
+//        'autocomplete_type' => 'tags',
         'placeholder' => '',
       ],
     ];
 
-    // Other widgets
-    if ($widget_type) {
-    }
-
-    return BaseFieldDefinition::create('entity_reference')
+    $definition = BaseFieldDefinition::create('entity_reference')
       ->setLabel($field_name)
       ->setDescription($description)
       ->setSetting('target_type', $type)
       ->setSetting('handler', 'default')
+      ->setCardinality($cardinality)
       ->setDisplayOptions('view', [
         'label' => 'above',
         'type' => 'entity_reference_label',
@@ -304,6 +301,14 @@ abstract class WahapediaEntityBase extends ContentEntityBase implements Wahapedi
       ->setDisplayOptions('form', $widget)
       ->setDisplayConfigurable('form', TRUE)
       ->setDisplayConfigurable('view', TRUE);
+
+    if ($settings) {
+      foreach ($settings as $setting_key => $setting_value) {
+        $definition->setSetting($setting_key, $setting_value);
+      }
+    }
+
+    return $definition;
   }
 
   /**

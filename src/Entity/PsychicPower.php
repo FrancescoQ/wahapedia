@@ -16,7 +16,7 @@ use Drupal\wahapedia\WahapediaEntityBase;
  *   label = @Translation("Wahapedia Psychic Power"),
  *   handlers = {
  *     "view_builder" = "Drupal\Core\Entity\EntityViewBuilder",
- *     "list_builder" = "Drupal\wahapedia\Entity\Controller\WahapediaEntityListBuilder",
+ *     "list_builder" = "Drupal\wahapedia\Entity\Controller\ViewsEntityListBuilder",
  *     "views_data" = "Drupal\views\EntityViewsData",
  *     "form" = {
  *       "default" = "Drupal\Core\Entity\ContentEntityForm",

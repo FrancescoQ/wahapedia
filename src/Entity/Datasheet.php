@@ -16,7 +16,7 @@ use Drupal\wahapedia\WahapediaEntityBase;
  *   label = @Translation("Wahapedia Datasheet"),
  *   handlers = {
  *     "view_builder" = "Drupal\Core\Entity\EntityViewBuilder",
- *     "list_builder" = "Drupal\wahapedia\Entity\Controller\DatasheetListBuilder",
+ *     "list_builder" = "Drupal\wahapedia\Entity\Controller\ViewsEntityListBuilder",
  *     "views_data" = "Drupal\views\EntityViewsData",
  *     "form" = {
  *       "default" = "Drupal\Core\Entity\ContentEntityForm",
@@ -78,7 +78,8 @@ class Datasheet extends WahapediaEntityBase {
       'models' => [
         'field_type' => 'entity_reference',
         'field_options' => [
-          'target_type' => 'wahapedia_model'
+          'target_type' => 'wahapedia_model',
+          'cardinality' => -1
         ],
         'label' => t('Models'),
         'description' => t('Reference to the Models that compose the datasheet')

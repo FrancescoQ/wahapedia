@@ -16,7 +16,7 @@ use Drupal\wahapedia\WahapediaEntityBase;
  *   label = @Translation("Wahapedia Faction"),
  *   handlers = {
  *     "view_builder" = "Drupal\Core\Entity\EntityViewBuilder",
- *     "list_builder" = "Drupal\wahapedia\Entity\Controller\FactionListBuilder",
+ *     "list_builder" = "Drupal\wahapedia\Entity\Controller\ViewsEntityListBuilder",
  *     "views_data" = "Drupal\views\EntityViewsData",
  *     "form" = {
  *       "default" = "Drupal\Core\Entity\ContentEntityForm",

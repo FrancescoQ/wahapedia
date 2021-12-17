@@ -269,13 +269,13 @@ class WahapediaCSVProcessor {
             $unique_string_data[] = $value;
           }
 
-          $mode_wid = $this::getCustomWIDFromString(implode('-', $unique_string_data));
-
+          $model_wid = $this::getCustomWIDFromString(implode('-', $unique_string_data));
+          $entities_data[$key]['models'][] = $this->getMappedEntity('wahapedia_model', 'wid', $model_wid);;
         }
       }
       $r="";
     }
-//    return $this->createEntities($entities_data, 'wahapedia_datasheet', $text_format, $update);
+    return $this->createEntities($entities_data, 'wahapedia_datasheet', $text_format, $update);
   }
 
   /**
@@ -682,7 +682,16 @@ class WahapediaCSVProcessor {
       }
 
       // Set the value and optionally the text format, if it's a text long field.
-      $entity->set($field_key, $field_value);
+      if (is_array($field_value)) {
+        $entity->set($field_key, []);
+
+        foreach ($field_value as $single_value) {
+          $entity->{$field_key}->appendItem($single_value);
+        }
+      }
+       else {
+        $entity->set($field_key, $field_value);
+      }
       if ($entity->getFieldDefinition($field_key)->getType() === 'text_long') {
         $entity->{$field_key}->format = $text_format;
       }

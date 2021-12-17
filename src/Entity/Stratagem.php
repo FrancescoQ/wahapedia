@@ -13,7 +13,7 @@ use Drupal\wahapedia\WahapediaEntityBase;
  *   label = @Translation("Wahapedia Stratagem"),
  *   handlers = {
  *     "view_builder" = "Drupal\Core\Entity\EntityViewBuilder",
- *     "list_builder" = "Drupal\wahapedia\Entity\Controller\StratagemListBuilder",
+ *     "list_builder" = "Drupal\wahapedia\Entity\Controller\ViewsEntityListBuilder",
  *     "views_data" = "Drupal\views\EntityViewsData",
  *     "form" = {
  *       "default" = "Drupal\Core\Entity\ContentEntityForm",
