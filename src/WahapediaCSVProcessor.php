@@ -264,6 +264,7 @@ class WahapediaCSVProcessor {
       // Associate the Models.
       $datasheet_id = $entity_data['wid'];
       foreach ($csv_data['wahapedia_model'] as $csv_model) {
+        $unique_string_data = [];
         if ($csv_model['_external']['datasheet_id'] === $datasheet_id) {
           foreach ($csv_model['_external'] as $value) {
             $unique_string_data[] = $value;
